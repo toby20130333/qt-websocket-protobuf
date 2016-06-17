@@ -52,4 +52,12 @@
 system(protoc -I=$$PWD --cpp_out=$$PWD $$PWD/*.proto)
 表示系统环境变量的protoc指令 将项目当前目录下的proto后缀的文件转成cpp文件即可，
 然后将转换后的cpp加入到Qt项目当中即可使用
+如下加入:
+
+SOURCES += \
+    *.pb.cc
+
+HEADERS += \
+    *.pb.h
+
 ```
