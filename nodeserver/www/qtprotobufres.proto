@@ -1,0 +1,12 @@
+message ResponseMessage {
+    //data service name
+     required string service = 1;
+    //result data format
+     required string format = 2;
+    //request is succeeded or not
+     required bool isSucceeded = 3;
+    //result data
+    //google.protobuf.Any data = 4;
+    //errors
+     required string errors = 5;
+}

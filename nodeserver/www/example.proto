@@ -1,0 +1,3 @@
+message MessageXX {
+    required string text = 1;
+}

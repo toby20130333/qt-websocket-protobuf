@@ -1,0 +1,15 @@
+message RequestMessage {
+    //data service name
+     required string service = 1;
+    //result data format
+     required string format = 2;
+    //token
+     required string token = 3;
+    //params
+    //map<string, google.protobuf.Any> params = 4;
+}
+
+message ErrorStatus {
+  required string message = 1;
+  //google.protobuf.Any details = 2;
+}
