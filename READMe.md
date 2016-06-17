@@ -46,4 +46,10 @@
 * 后端需安装nodejs的sdk，并在命令行使用node -v输出版本查看是否安装正常
 * Qt版本必须为5.3.1及以上
 * 自己编译protobuf的C++库需要注意编译器的版本与Qt的编译器的版本一致
-* 熟练使用protobuf的message结构使用
+* 熟练使用protobuf的message结构
+* pro文件16行注释说明
+```
+system(protoc -I=$$PWD --cpp_out=$$PWD $$PWD/*.proto)
+表示系统环境变量的protoc指令 将项目当前目录下的proto后缀的文件转成cpp文件即可，
+然后将转换后的cpp加入到Qt项目当中即可使用
+```

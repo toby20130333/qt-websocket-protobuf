@@ -12,6 +12,9 @@ TARGET = WebSocketAndProto
 TEMPLATE = app
 CONFIG += C++11
 
+
+#system(protoc -I=$$PWD --cpp_out=$$PWD $$PWD/*.proto)
+
 INCLUDEPATH += /usr/local/include
 LIBS += -L/usr/local/lib -lprotobuf
 
